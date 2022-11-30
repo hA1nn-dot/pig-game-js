@@ -9,8 +9,14 @@
     box-sizing: border-box;
 }
 
+html{
+    box-sizing: border-box;
+}
 body{
     font-family: var(--main-font-family);
+    color: #333;
+    background-color: rosybrown;
+    /* background-image: linear-gradient(to top left, #7536B2 0%, #bf2e34 100% ); */
 }
 
 .container{
@@ -21,19 +27,62 @@ body{
 
 .container__game{
     width: 60rem;
-    background: green;
     display: flex;
-    margin: 3.5rem 0;
+    position: relative;
+    margin: 3.9rem 0;
+}
+
+.dice >img{
+    width: 70px;
+}
+
+.container__game-buttons button,
+.container__game-buttons .dice{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+.container__game-buttons button:nth-child(1){
+    bottom: 75%;
+}
+
+.container__game-buttons div.dice{
+    bottom: 55%;
+}
+
+.container__game-buttons button:nth-child(3){
+    bottom: 40%;
+}
+
+.container__game-buttons button:nth-child(4){
+    bottom: 30%;
+}
+
+.container__game-buttons button{
+    color: #444;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.7rem 2.5rem;
+}
+
+.container__game-buttons button::focus {
+    outline: none;
 }
 
 .player{
     width: 50%;
     padding-top: 6rem;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .player__title{
@@ -45,7 +94,7 @@ body{
 }
 
 .player1{
-    background: blue;
+    background: blueviolet;
 }
 
 .player2{
@@ -54,7 +103,7 @@ body{
 
 .container__game-player--points{
     margin: 5rem 0;
-    background: yellow;
+    background: #c7365f;
     width: 10rem;
     display: flex;
     justify-content: center;
@@ -66,4 +115,8 @@ body{
 .container__game-player--points p{
     font-size: 25px;
     font-weight: 500;
+}
+
+.player--active{
+    background-color: rgba(255, 255, 255, 0.4);
 }
