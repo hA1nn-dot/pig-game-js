@@ -46,19 +46,19 @@ body{
 }
 
 .container__game-buttons button:nth-child(1){
-    bottom: 75%;
+    bottom: 80%;
 }
 
 .container__game-buttons div.dice{
-    bottom: 55%;
+    bottom: 65%;
 }
 
 .container__game-buttons button:nth-child(3){
-    bottom: 40%;
+    bottom: 50%;
 }
 
 .container__game-buttons button:nth-child(4){
-    bottom: 30%;
+    bottom: 40%;
 }
 
 .container__game-buttons button{
