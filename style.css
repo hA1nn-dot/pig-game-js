@@ -103,6 +103,7 @@ body{
 
 .container__game-player--points{
     margin: 5rem 0;
+    color: #fff;
     background: #c7365f;
     width: 10rem;
     display: flex;
