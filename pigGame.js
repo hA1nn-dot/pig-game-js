@@ -117,7 +117,7 @@ function start(){
             player2.changeTurn();
             player1.changeTurn();
             console.log("Termina turno " + currentTurn);
-            currentTurn++;
+            currentTurn++; // posible error
         }
         if(currentTurn >= TOTAL_TURNS){
             console.log("Termina juego...");
